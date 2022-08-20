@@ -1,0 +1,31 @@
+@model ejemplo.Models.Calculadora
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    Mi app calculadora
+
+    <form asp-controller="Calculadora" asp-action="Calcular">
+        
+        <input asp-for="Operador1" class="form-control"/>
+        <input asp-for="Operador2" class="form-control"/>
+        <select asp-for="Operando" class="form-control">
+            <option value="+">Suma</option>
+            <option value="-">Resta</option>
+            <option value="*">Multiplicacion</option>
+            <option value="/">Division</option>
+        </select>
+
+        <br><button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+    <br><h1>@ViewData["Message"]</h1>
+</body>
+</html>
