@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ejemplo.Models;
 
-namespace webapp.Controllers
+namespace ejemplo.Controllers
 {
     
     public class CalculadoraController : Controller

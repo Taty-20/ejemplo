@@ -1,17 +1,7 @@
 @model ejemplo.Models.Calculadora
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    Mi app calculadora
+<div class="text-center">
+    <h1 class="display-4">Contactenos</h1>
 
     <form asp-controller="Calculadora" asp-action="Calcular">
         
@@ -27,5 +17,4 @@
         <br><button type="submit" class="btn btn-primary">Calcular</button>
     </form>
     <br><h1>@ViewData["Message"]</h1>
-</body>
-</html>
+</div>
