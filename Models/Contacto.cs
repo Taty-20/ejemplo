@@ -9,13 +9,13 @@ namespace ejemplo.Models
 {
     public class Contacto
     {
-        [Display (Name = "Nombre Completo")]
+        [Display (Name = "Name")]
         public string? Name {get;set;}
         [EmailAddress]
-        [Display (Name = "Correo")]
+        [Display (Name = "Correo",Prompt ="example@example.org")]
         public string? Email {get;set;}
         [Phone]
-        [Display (Name = "Telefono")]
+        [Display (Name = "Telefono",Prompt ="999-999-999")]
         public string? Phone {get;set;}
         [MinLength(5)]
         [MaxLength(1024)]
